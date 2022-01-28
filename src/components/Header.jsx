@@ -2,8 +2,6 @@ import styled from "styled-components";
 import Logo from "@src/components/Logo";
 
 import cfg from '@src/cfg.json'
-const colors = cfg.colors
-const sizes = cfg.fontSizes
 
 const HeaderBox = styled.div`
     position: absolute;
@@ -30,8 +28,8 @@ const Name = styled.h1`
     margin-left: 15px;
     font-family: '${cfg.font}';
     font-size: 1.5rem;
-    color: ${colors.subtext};
-    font-weight: ${sizes['semi-bold']};
+    color: ${cfg.colors.subtext};
+    font-weight: ${cfg.fontSizes.semiBold};
 `
 
 const Nav = styled.div`
@@ -45,13 +43,13 @@ const Item = styled.a`
     margin-left: 0px;
     font-family: '${cfg.font}';
     font-size: 1.2rem;
-    color: ${colors.subtext};
-    font-weight: ${sizes.semiBold};
+    color: ${cfg.colors.subtext};
+    font-weight: ${cfg.fontSizes.semiBold};
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-in;
     &:hover{
-        color: ${colors.main};
+        color: ${cfg.colors.main};
     }
     margin-left: 40px;
 `

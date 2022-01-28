@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import config from "@src/cfg.json";
+import cfg from "@src/cfg.json";
 import Logo from "@src/components/Logo";
 
-const colors = config.colors
-const sizes = config.fontSizes
 
 const FooterStyled = styled.footer`
     box-sizing:content-box;
@@ -12,7 +10,7 @@ const FooterStyled = styled.footer`
     justify-content:center;
     flex-direction:column;
     align-items:center;
-    background-color: ${colors.background};
+    background-color: ${cfg.colors.background};
     color: #fff;
 `
 
@@ -26,15 +24,15 @@ const Texts = styled.div`
 
 const Text = styled.p`
     font-size: 1.2rem;
-    font-family: ${config.font};
-    font-weight: ${sizes.medium};
-    color: ${colors.subtext};
+    font-family: ${cfg.font};
+    font-weight: ${cfg.fontSizes.medium};
+    color: ${cfg.colors.subtext};
 `
 
 const CopyrightText = styled(Text)`
     margin-bottom: 10px;
     font-size: 1rem;
-    color: ${colors.text};
+    color: ${cfg.colors.text};
 `
 
 const Footer = ()=>{
@@ -42,8 +40,8 @@ const Footer = ()=>{
         <FooterStyled>
             <Logo width="60px"/>
             <Texts>
-                <Text>Email: {config.info.email}</Text>
-                <Text>Contato: {config.info.celular}</Text>
+                <Text>Email: {cfg.info.email}</Text>
+                <Text>Contato: {cfg.info.celular}</Text>
             </Texts>
             <CopyrightText>Dot, {new Date().getFullYear()}. All rights reserved</CopyrightText>
         </FooterStyled>
