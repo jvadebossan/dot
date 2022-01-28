@@ -1,0 +1,23 @@
+{
+    "colors":{
+        "background":"#010101",
+        "background2":"#101010",
+        "main":"#8257e5",
+        "text":"#fdfdfd",
+        "subtext":"#737380",
+        "border":"#303030"
+    },
+    "fontSizes":{
+        "regular":"400",
+        "medium":"500",
+        "semiBold":"600",
+        "bold":"700",
+        "extraBold":"800",
+        "black":"900"
+    },
+    "font":"Red Hat Display",
+    "info":{
+        "email":"contato.dot@gmail.com",
+        "celular": "(99) 99999-9999"
+    }
+}
