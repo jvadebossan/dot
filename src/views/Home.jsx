@@ -126,7 +126,7 @@ const AboutContainer = styled.div`
         justify-content: center;
     }
 `
-const AboutText = styled.p`
+const AboutText = styled.div`
     flex: 1;
     min-width: 600px;
     height: 100%;
