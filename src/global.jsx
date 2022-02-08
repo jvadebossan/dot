@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import cfg from "./cfg.json";
 
 const Global = createGlobalStyle`
     *,*::before,*::after{
@@ -9,6 +10,10 @@ const Global = createGlobalStyle`
 
     #root{
         overflow-x:hidden;
+    }
+
+    body{
+        font-family: '${cfg.font}';
     }
 `
 export default Global;

@@ -23,6 +23,7 @@ const Texts = styled.div`
 `
 
 const Text = styled.p`
+    text-align:center;
     font-size: 1.2rem;
     font-family: ${cfg.font};
     font-weight: ${cfg.fontSizes.medium};
@@ -32,6 +33,7 @@ const Text = styled.p`
 const CopyrightText = styled(Text)`
     margin-bottom: 10px;
     font-size: 1rem;
+    text-align:center;
     color: ${cfg.colors.text};
 `
 
