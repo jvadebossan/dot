@@ -10,6 +10,7 @@ const FooterStyled = styled.footer`
     justify-content:center;
     flex-direction:column;
     align-items:center;
+    border-top: 3px solid ${cfg.colors.border};
     background-color: ${cfg.colors.background};
     color: #fff;
 `

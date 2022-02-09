@@ -2,9 +2,6 @@ import styled from 'styled-components'
 import cfg from '@src/cfg.json'
 
 import { IconContext } from 'react-icons'
-import {BsFillBrushFill} from "react-icons/bs"
-
-
 
 const AboutCardTitle = styled.h1`
     color:white;

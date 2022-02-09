@@ -12,6 +12,7 @@ import Svg from "@src/images/banner.svg"
 
 //components
 import AboutCard from '@src/components/AboutCard'
+import SectionTitle from '@src/components/SectionTitle'
 
 //banner
 const BannerBg = styled.div`
@@ -26,7 +27,6 @@ const BannerBg = styled.div`
         padding: 0px 20px;
     }
 `
-
 const BannerContent = styled.div`
     margin-top: 100px;
     width: 50%;
@@ -86,7 +86,6 @@ const Btn = styled.a`
         left: calc(50% - 60px);
     }
 `
-
 const Banner = () => {
     return(
         <BannerBg>
@@ -110,7 +109,6 @@ const AboutBg = styled.div`
     border-top: 3px solid ${cfg.colors.border};
     padding: 8% 0;
 `
-
 //about text
 const AboutContainer = styled.div`
     width: 100vw;
@@ -128,11 +126,15 @@ const AboutContainer = styled.div`
 `
 const AboutText = styled.div`
     flex: 1;
+    width: 100%;
     min-width: 600px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
     @media (max-width: 600px) {
         min-width: 300px;
         text-align: center;
+        align-items: center;
     }
 `
 const AboutTitle = styled.h1`
@@ -165,21 +167,19 @@ const AboutDesc = styled.p`
 const AboutBtn = styled.p`
     margin: 50px 0px;
     width: fit-content;
-    padding: 15px 25px;
+    padding: 15px 50px;
     font-family: '${cfg.font}';
     font-weight: ${cfg.fontSizes.semiBold};
     background-color: ${cfg.colors.main};
     color: ${cfg.colors.text};
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-radius: 360px;
     cursor: pointer;
     @media (max-width: 600px) {
-        font-size: 1rem;
         text-align: center;
         width: 100%;
     }
 `
-
 //cards
 const AboutCards = styled.ul`
     flex: 2;
@@ -190,7 +190,6 @@ const AboutCards = styled.ul`
     justify-content: center;
     align-items:center;
 `
-
 const About = () =>{
     return(
         <AboutBg>
@@ -211,17 +210,34 @@ const About = () =>{
     )
 }
 
+
 //projects
+const ProjectsBg = styled.div`
+    width: 100vw;
+    min-height: 90vh;
+    height: auto;
+    padding-bottom: 100px;
+    background-color: ${cfg.colors.background};
+    border-top: 3px solid ${cfg.colors.border};
+    padding: 8% 50px;
+`
+const Projects = (props) => {
+    return(
+        <ProjectsBg>
+            <SectionTitle title={props.title} desc={props.desc}/>
+        </ProjectsBg>
+    )
+}
 
 
-
-//co ments
+//coments
 
 const Home = () => {
     return(
         <Layout>
             <Banner/>
             <About/>
+            <Projects title="Projetos" desc="Alguns dos nossos Projetos:"/>
         </Layout>
     )
 }
