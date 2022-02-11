@@ -13,6 +13,7 @@ import Svg from "@src/images/banner.svg"
 //components
 import AboutCard from '@src/components/AboutCard'
 import SectionTitle from '@src/components/SectionTitle'
+import Project from '@src/components/Project'
 
 //banner
 const BannerBg = styled.div`
@@ -214,17 +215,39 @@ const About = () =>{
 //projects
 const ProjectsBg = styled.div`
     width: 100vw;
-    min-height: 90vh;
+    min-height: 80vh;
     height: auto;
-    padding-bottom: 100px;
     background-color: ${cfg.colors.background};
     border-top: 3px solid ${cfg.colors.border};
-    padding: 8% 50px;
+    padding: 5% 50px;
+    @media (max-width: 600px) {
+        padding: 0px 20px
+        text-align: center;
+    }
+`
+const ProjectsContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    margin-top: 70px;
+    @media (max-width: 600px) {
+        text-align: center;
+        justify-content: center;
+    }
 `
 const Projects = (props) => {
     return(
         <ProjectsBg>
             <SectionTitle title={props.title} desc={props.desc}/>
+            <ProjectsContainer>
+                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
+                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
+                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
+                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
+                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
+                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
+            </ProjectsContainer>
         </ProjectsBg>
     )
 }
@@ -237,7 +260,7 @@ const Home = () => {
         <Layout>
             <Banner/>
             <About/>
-            <Projects title="Projetos" desc="Alguns dos nossos Projetos:"/>
+            <Projects title="Projetos" desc="Alguns dos nossos Projetos:"/> 
         </Layout>
     )
 }
