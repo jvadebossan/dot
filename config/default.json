@@ -1,0 +1,13 @@
+{
+    "api": {
+        "email": {
+            "host": "smtp-mail.outlook.com",
+            "port": 587,
+            "tls": {
+                "ciphers": "SSLv3"
+            },
+            "name": "Dot",
+            "to": "viktortaveira@gmail.com,jvdebossan@gmail.com"
+        }
+    }
+}

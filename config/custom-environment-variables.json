@@ -1,0 +1,15 @@
+{
+    "api": {
+        "email": {
+            "host": "EMAIL_HOST",
+            "port": "EMAIL_PORT",
+            "auth": {
+                "user": "EMAIL_USER",
+                "pass": "EMAIL_PASS"
+            }
+        },
+        "captcha": {
+            "secret": "CAPTCHA_SECRET"
+        }
+    }
+}

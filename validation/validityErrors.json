@@ -1,0 +1,21 @@
+{
+    "name": {
+        "valueMissing": "O nome é necessário!"
+    },
+    "lastName": {
+        "valueMissing": "O sobrenome é necessário!"
+    },
+    "email": {
+        "valueMissing": "O email é necessário!",
+        "typeMismatch": "Esse email não é válido!"
+    },
+    "celular": {
+        "valueMissing": "O celular é necessário!",
+        "patternMismatch": "Celular Inválido. Formato: xx 9xxxx-xxxx"
+    },
+    "message": {
+        "valueMissing": "A mensagem é necessária!",
+        "tooLong": "Essa mensagem é muito longa!",
+        "tooShort": "Essa mensagem é muito curta!"
+    }
+}
