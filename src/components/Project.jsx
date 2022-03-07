@@ -20,7 +20,7 @@ const Btn = styled.a`
     padding: 10px 20px;
     background-color: ${cfg.colors.main};
     position: relative;
-    z-index: 2;
+    z-index: 100;
     bottom: 330px;
     left: 35%;
     text-decoration: none;
@@ -33,6 +33,9 @@ const Btn = styled.a`
     opacity: 0;
     transition: all 0.5s ease-out;
     pointer-events: none;
+    &:hover {
+        backgroun-color: #f00;
+    }
 `
 const Title = styled.h1`
     position: relative;
@@ -57,15 +60,19 @@ const Title = styled.h1`
         opacity: 1;
     }
 `
-
+const BoxLink = styled.a`
+    text-decoration: none;
+`
 const Project = (props) => {
     console.log(props.url)
     return(
-        <Box>
-            <Img className='background' src={props.img}/>
-            <Title className='title' >{props.name}</Title>
-            <Btn className='button' href={props.url}>Abrir</Btn>
-        </Box>
+        <BoxLink href={props.url} target="_blank">
+            <Box>
+                <Img className='background' src={props.img}/>
+                <Title className='title' >{props.name}</Title>
+                <Btn className='button' href={props.url}>Abrir</Btn>
+            </Box>
+        </BoxLink>
     )
 }
 

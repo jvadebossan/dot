@@ -93,7 +93,7 @@ const Banner = () => {
             <BannerContent>
                 <BannerTitle>Somos a <span style={{color: cfg.colors.main}}>DOT</span></BannerTitle>
                 <BannerDesc>Aqui  sua ideia se torna realidade. Desenvolvemos sites e aplicações utilizando as melhores tecnologias do mercado. </BannerDesc>
-                <Btn href="/contato">Contato</Btn>
+                <Btn href="https://api.whatsapp.com/send?phone=5527998022214&text=Olá. Gostaria de fazer um orçamento de site">Contato</Btn>
             </BannerContent>
             <BannerSvg src={Svg}/>
         </BannerBg>
@@ -165,7 +165,7 @@ const AboutDesc = styled.p`
         width: 100%;
     }
 `
-const AboutBtn = styled.p`
+const AboutBtn = styled.a`
     margin: 50px 0px;
     width: fit-content;
     padding: 15px 50px;
@@ -173,6 +173,7 @@ const AboutBtn = styled.p`
     font-weight: ${cfg.fontSizes.semiBold};
     background-color: ${cfg.colors.main};
     color: ${cfg.colors.text};
+    text-decoration: none;
     font-size: 1.3rem;
     border-radius: 360px;
     cursor: pointer;
@@ -193,12 +194,12 @@ const AboutCards = styled.ul`
 `
 const About = () =>{
     return(
-        <AboutBg>
+        <AboutBg id="sobre">
             <AboutContainer>
                 <AboutText>
                     <AboutTitle>Um pouco sobre nós</AboutTitle>
-                    <AboutDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</AboutDesc>
-                    <Link to="/contato" style={{textDecoration: 'none'}}><AboutBtn>Faça já seu orçamento</AboutBtn></Link>
+                    <AboutDesc>A Dot é uma agência digital focada em oferecer serviços de criação de sites. Atendemos empresas de pequeno, médio e grande porte, nos mais variados segmentos que buscam melhorar a visibilidade na internet. Nós utilizamos as ferramentas mais atualizadas do mercado para fornecer um seriço estável e de qualidade, visando atingir o objetivo esperado pela empresa contratante.</AboutDesc>
+                    <AboutBtn href="https://api.whatsapp.com/send?phone=5527998022214&text=Olá. Gostaria de fazer um orçamento de site">Faça já seu orçamento</AboutBtn>
                 </AboutText>
                 <AboutCards>
                     <AboutCard title="Design" content="O Design dos sites que criamos são feitos visando um melhor User Experience, além de encaixar com o tipo de produto/serviço que nosso cliente oferece" icon={BsBrush}/>
@@ -238,15 +239,15 @@ const ProjectsContainer = styled.div`
 `
 const Projects = (props) => {
     return(
-        <ProjectsBg>
+        <ProjectsBg  id="projetos">
             <SectionTitle title={props.title} desc={props.desc}/>
             <ProjectsContainer>
+                <Project name="Dot" img="https://media.discordapp.net/attachments/816121169602019330/950446853919502376/dot.png" url="https://dot-up.vercel.app"/>
                 <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
-                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
-                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
-                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
-                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
-                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
+                <Project name="Dashboard" img="https://media.discordapp.net/attachments/816121169602019330/950447785533145118/dashboard.png" url="https://simpledashboard123.netlify.app"/>
+                <Project name="Medicenter" img="https://media.discordapp.net/attachments/816121169602019330/950446853713973298/medicenter.png" url="https://medicenter.tk"/>
+                <Project name="Repfestas" img="https://media.discordapp.net/attachments/816121169602019330/950451496410038413/repfestas.png" url="https://repfestas.com"/>
+
             </ProjectsContainer>
         </ProjectsBg>
     )

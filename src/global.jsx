@@ -15,5 +15,9 @@ const Global = createGlobalStyle`
     body{
         font-family: '${cfg.font}';
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
 `
 export default Global;

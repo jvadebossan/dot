@@ -71,7 +71,6 @@ const HeaderContent = () => {
             <Nav>
                 <Item href="#sobre">Sobre Nós</Item>
                 <Item href="#projetos">Projetos</Item>
-                <Item href="/contato">Contato</Item>
             </Nav>
         </HeaderBox>
     )
