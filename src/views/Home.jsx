@@ -242,12 +242,12 @@ const Projects = (props) => {
         <ProjectsBg  id="projetos">
             <SectionTitle title={props.title} desc={props.desc}/>
             <ProjectsContainer>
+                <Project name="CPX Racing" img="https://media.discordapp.net/attachments/816121169602019330/1001231903451533432/cpxracing.png" url="https://cpxracing.com.br"/>
+                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.com.br"/>
                 <Project name="Dot" img="https://media.discordapp.net/attachments/816121169602019330/950446853919502376/dot.png" url="https://dot-up.vercel.app"/>
-                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.tk"/>
                 <Project name="Dashboard" img="https://media.discordapp.net/attachments/816121169602019330/950447785533145118/dashboard.png" url="https://simpledashboard123.netlify.app"/>
                 <Project name="Medicenter" img="https://media.discordapp.net/attachments/816121169602019330/950446853713973298/medicenter.png" url="https://medicenter.tk"/>
                 <Project name="Repfestas" img="https://media.discordapp.net/attachments/816121169602019330/950451496410038413/repfestas.png" url="https://repfestas.com"/>
-
             </ProjectsContainer>
         </ProjectsBg>
     )
