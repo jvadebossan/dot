@@ -93,7 +93,7 @@ const Banner = () => {
             <BannerContent>
                 <BannerTitle>Somos a <span style={{color: cfg.colors.main}}>DOT</span></BannerTitle>
                 <BannerDesc>Aqui  sua ideia se torna realidade. Desenvolvemos sites e aplicações utilizando as melhores tecnologias do mercado. </BannerDesc>
-                <Btn href="https://api.whatsapp.com/send?phone=5527998022214&text=Olá. Gostaria de fazer um orçamento de site">Contato</Btn>
+                <Btn href="https://api.whatsapp.com/send?phone=5511961352783&text=Olá. Gostaria de fazer um orçamento de site">Contato</Btn>
             </BannerContent>
             <BannerSvg src={Svg}/>
         </BannerBg>
@@ -198,8 +198,8 @@ const About = () =>{
             <AboutContainer>
                 <AboutText>
                     <AboutTitle>Um pouco sobre nós</AboutTitle>
-                    <AboutDesc>A Dot é uma agência digital focada em oferecer serviços de criação de sites. Atendemos empresas de pequeno, médio e grande porte, nos mais variados segmentos que buscam melhorar a visibilidade na internet. Nós utilizamos as ferramentas mais atualizadas do mercado para fornecer um seriço estável e de qualidade, visando atingir o objetivo esperado pela empresa contratante.</AboutDesc>
-                    <AboutBtn href="https://api.whatsapp.com/send?phone=5527998022214&text=Olá. Gostaria de fazer um orçamento de site">Faça já seu orçamento</AboutBtn>
+                    <AboutDesc>A DOT é uma Agência Digital focada em oferecer serviços de criação de sites. Atendemos empresas de pequeno, médio e grande porte, nos mais variados segmentos que buscam melhorar a visibilidade na internet. Nós utilizamos as ferramentas mais atualizadas do mercado para fornecer um serviço estável e de qualidade, visando atingir o objetivo esperado pela empresa contratante.</AboutDesc>
+                    <AboutBtn href="https://api.whatsapp.com/send?phone=5511961352783&text=Olá. Gostaria de fazer um orçamento de site">Faça já seu orçamento</AboutBtn>
                 </AboutText>
                 <AboutCards>
                     <AboutCard title="Design" content="O Design dos sites que criamos são feitos visando um melhor User Experience, além de encaixar com o tipo de produto/serviço que nosso cliente oferece" icon={BsBrush}/>
