@@ -242,12 +242,12 @@ const Projects = (props) => {
         <ProjectsBg  id="projetos">
             <SectionTitle title={props.title} desc={props.desc}/>
             <ProjectsContainer>
-                <Project name="CPX Racing" img="https://media.discordapp.net/attachments/816121169602019330/1001231903451533432/cpxracing.png" url="https://cpxracing.com.br"/>
-                <Project name="Codify" img="https://media.discordapp.net/attachments/815305065727787062/941749649235140648/codify_banner-min.jpg" url="https://codifycommunity.com.br"/>
-                <Project name="Dot" img="https://media.discordapp.net/attachments/816121169602019330/950446853919502376/dot.png" url="https://dot-up.vercel.app"/>
-                <Project name="Dashboard" img="https://media.discordapp.net/attachments/816121169602019330/950447785533145118/dashboard.png" url="https://simpledashboard123.netlify.app"/>
-                <Project name="Medicenter" img="https://media.discordapp.net/attachments/816121169602019330/950446853713973298/medicenter.png" url="https://medicenter.tk"/>
-                <Project name="Repfestas" img="https://media.discordapp.net/attachments/816121169602019330/950451496410038413/repfestas.png" url="https://repfestas.com"/>
+                <Project name="CPX Racing" img="https://media.discordapp.net/attachments/816121169602019330/1233502974236688394/cpxracing.png?ex=662d54aa&is=662c032a&hm=18b787362b2a3db583240e787c4d923d19d3b70ca307b3b1da4c689a08e2ab32&=&format=webp&quality=lossless&width=1191&height=670" url="https://cpxracing.com.br"/>
+                <Project name="Codify" img="https://media.discordapp.net/attachments/816121169602019330/1233502974861377616/Banner-codify.png?ex=662d54aa&is=662c032a&hm=8c9baab9fc9ddedaf2c50c399b461291c6866e59a36e8d6a60a0635e0f105306&=&format=webp&quality=lossless&width=1191&height=670" url="https://codifycommunity.com.br"/>
+                <Project name="Dot" img="https://media.discordapp.net/attachments/816121169602019330/1233502973276192768/dot.png?ex=662d54aa&is=662c032a&hm=c3b50f9725175d2ad5ad4ff4f72742a7bbbebd738232879dc4e3312b1191ed7a&=&format=webp&quality=lossless&width=1191&height=670" url="https://dot-up.vercel.app"/>
+                <Project name="Dashboard" img="https://media.discordapp.net/attachments/816121169602019330/1233502973510811751/dashboard.png?ex=662d54aa&is=662c032a&hm=689b01d615d245daea9f10b7b421ed48452f3cb86f8b7d73e40975bfe353e214&=&format=webp&quality=lossless&width=1191&height=670" url="https://simpledashboard123.netlify.app"/>
+                <Project name="Medicenter" img="https://media.discordapp.net/attachments/816121169602019330/1233502972902768673/medicenter.png?ex=662d54aa&is=662c032a&hm=fed636918f28172c8689153655c6358935a35cf9fa5f094c4ad1ce326be7d565&=&format=webp&quality=lossless&width=1191&height=670" url="https://medicenter.tk"/>
+                <Project name="Repfestas" img="https://media.discordapp.net/attachments/816121169602019330/1233502973796155432/repfestas.png?ex=662d54aa&is=662c032a&hm=e617b1b57fc6e9432c4dedc66572d679922ab495d7eac45a3f9b64b6e2874814&=&format=webp&quality=lossless&width=600&height=337" url="https://repfestas.com"/>
             </ProjectsContainer>
         </ProjectsBg>
     )
